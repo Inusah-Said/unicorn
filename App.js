@@ -29,8 +29,8 @@ const App = () => {
           <Text>Here are some boxes of different colours</Text>
         </View> */}
 
-        {/* <ColorBox data={data} /> */}
-        <FlatListComponent />
+        <ColorBox data={data} />
+        {/* <FlatListComponent /> */}
       </View>
     </SafeAreaView>
   );
