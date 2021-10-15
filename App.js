@@ -1,7 +1,7 @@
 import React from 'react';
 
 import {View, Text, SafeAreaView, StyleSheet} from 'react-native';
-
+import ColorBox from './ColorBox';
 const App = () => {
   const data = [
     {
@@ -28,15 +28,7 @@ const App = () => {
           <Text>Here are some boxes of different colours</Text>
         </View>
 
-        {data.map(item => (
-          <View
-            key={item.color}
-            style={[styles.textContainer, {backgroundColor: item.hex}]}>
-            <Text style={styles.text}>
-              {item.color}: {item.hex}
-            </Text>
-          </View>
-        ))}
+        <ColorBox data={data} />
       </View>
     </SafeAreaView>
   );
@@ -52,6 +44,5 @@ const styles = StyleSheet.create({
     margin: 5,
   },
   safearea: {flex: 1},
-  text: {color: 'white'},
 });
 export default App;
