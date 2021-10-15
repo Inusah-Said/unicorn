@@ -1,1 +1,1 @@
-"Trying my hands on react native after dumping in for ages" 
+Trying my hands on react native after dumping in for ages
