@@ -1,7 +1,8 @@
 import React from 'react';
 
 import {View, Text, SafeAreaView, StyleSheet} from 'react-native';
-import ColorBox from './ColorBox';
+import ColorBox from './src/components/ColorBox';
+import FlatListComponent from './src/components/FlatList';
 const App = () => {
   const data = [
     {
@@ -24,11 +25,12 @@ const App = () => {
   return (
     <SafeAreaView style={styles.safearea}>
       <View style={styles.container}>
-        <View style={styles.textContainer}>
+        {/* <View style={styles.textContainer}>
           <Text>Here are some boxes of different colours</Text>
-        </View>
+        </View> */}
 
-        <ColorBox data={data} />
+        {/* <ColorBox data={data} /> */}
+        <FlatListComponent />
       </View>
     </SafeAreaView>
   );
