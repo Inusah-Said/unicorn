@@ -2,8 +2,6 @@ import React from 'react';
 import {TouchableOpacity, Text, FlatList, StyleSheet, View} from 'react-native';
 
 const PalettePreview = ({palette, handlePress}) => {
-  console.log(palette.colors.slice(0, 5));
-
   return (
     <TouchableOpacity onPress={handlePress}>
       <Text style={styles.text}>{palette.paletteName}</Text>
